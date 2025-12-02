@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-COMMERCE</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div id="user-display"></div>
+    <h1>🛍 MY Shop</h1>               
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="PRODUCT.html">Products</a>
+      <a href="Cart.html">Cart</a>
+    </nav>
+  </header>
+
+  <section class="main">
+    <h2>Welcome To My Shop</h2>
+    <h5>The Best Deals On Top Products</h5>
+    <a href="product.html" class="btn">Shop Me</a>
+  </section>
+
+  <section class="highlights">
+    <h2>WHY CHOOSE US?</h2>
+    <ul>
+      <li>HIGH QUALITY PRODUCTS</li>
+      <li>BEST PRICE GUARANTEES</li>
+      <li>FAST AND SECURE DELIVERY</li>
+      <li>EASY RETURNS AND REFUNDS</li>
+    </ul>
+  </section>
+
+  <footer>
+    © 2025 MyShop. All Rights Reserved.
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      let user = localStorage.getItem("loginuser");
+      if(user) {
+        document.getElementById("user-display").innerText = "Welcome, " + user;
+      }
+    });
+  </script>
+</body>
+</html>
